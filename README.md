@@ -9,6 +9,8 @@ The shape is inspired by `georgeskills`, but the unit is different:
 - A **skill** is a reusable capability an agent can load on demand.
 - A **loop** is a recurring operating pattern with a cadence, inputs, output,
   guardrails, and a verifier.
+- A **goal** is a reusable objective recipe that can be handed to an agent or
+  used inside a loop, but does not run on a schedule by itself.
 
 Good loops are usually boring. They watch a narrow surface, produce a bounded
 report, and make the next human decision easier.
@@ -36,12 +38,25 @@ filenames are not.
 GeorgeLoops/
   AGENTS.md
   README.md
+  goals/
+    <goal-id>/
+      GOAL.md
   loops/
     <loop-id>/
       LOOP.md
   templates/
+    GOAL_TEMPLATE.md
     LOOP_TEMPLATE.md
 ```
+
+## Goal Catalog
+
+These are not active automations. They are reusable objective recipes to keep
+around for future agent work.
+
+| Goal | Status | Why It Exists |
+|---|---|---|
+| `refactor-until-architecture-settles` | reference | Captures the Peter Steinberger-style `/goal` pattern for architecture refactors with live testing and autoreview. |
 
 ## Loop Catalog
 
@@ -54,6 +69,7 @@ GeorgeLoops/
 | `weekly-file-organization-review` | active, useful | weekly Saturday 9 AM | Reviews Downloads/Documents/external drive candidates without moving anything automatically. |
 | `nightly-daily-workflow-social-draft-loop` | active, testing | daily 10 PM | Turns daily workflow signal into draft social angles without posting. |
 | `monitor-ai-warehouse-and-wono` | active, testing | weekly Saturday 9 AM | Watches selected creator sources for reusable hook mechanics and ignition ideas. |
+| `wake-codex-repo-maintenance-loop` | idea, reference | manual only | Captures Peter Steinberger's wake-Codex-every-few-minutes repo-maintenance loop without enabling it. |
 
 ## Design Rules
 

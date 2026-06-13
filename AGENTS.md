@@ -13,8 +13,13 @@ Read in order:
 ## Editing Rules
 
 - Keep each loop in `loops/<loop-id>/LOOP.md`.
+- Keep each goal recipe in `goals/<goal-id>/GOAL.md`.
 - Every loop should define purpose, trigger, cadence, inputs, workflow,
   outputs, guardrails, and verifier.
+- Every goal should define purpose, prompt, when to use it, inputs, workflow,
+  guardrails, and completion criteria.
+- Goals are reusable prompt recipes, not scheduled automations. A goal may be
+  used inside a loop, but it should not imply recurring execution by itself.
 - Prefer report-only loops until they have been tested repeatedly.
 - Do not add destructive actions such as moving files, deleting files, posting,
   emailing, or committing unless the loop has an explicit human approval gate.
