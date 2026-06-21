@@ -62,9 +62,14 @@ around for future agent work.
 
 | Loop | Status | Cadence | Why It Exists |
 |---|---|---:|---|
+| `daily-morning-routine` | active, useful | daily 9 AM | Runs the start-of-day journal, alert, market-radar, and planning workflow. |
+| `nightly-commit-and-push-review` | active, useful | daily 9 PM | Reviews dirty repos, commits defensible work, and pushes only gated autonomous candidates. |
+| `codex-thread-title-hygiene` | active, useful | daily noon | Keeps recent and pinned Codex thread titles specific enough to find again. |
 | `weekly-agent-loop-scan` | active, useful | weekly Saturday 9 AM | Finds high-signal new loop candidates from recent work. |
+| `weekly-codex-automation-catalog-sync` | active, testing | weekly Saturday 9 AM | Keeps GeorgeLoops aligned with newly created Codex automations and reusable goal recipes. |
 | `georgerepo-cleanup-candidate-scan` | active, useful | every 2 weeks Saturday 9 AM | Finds small repo cleanup candidates before the private repo drifts. |
 | `cross-repo-pattern-propagation-scan` | active, useful | weekly Saturday 9 AM | Spots patterns that worked in one repo and may deserve propagation. |
+| `biweekly-sprint-retro-and-next-sprint-planning` | active, useful | every 2 weeks Sunday 8 PM | Turns sprint history into a retro and a concrete next-sprint plan. |
 | `monthly-skill-cleaner-scan` | active, useful | first Saturday monthly gate | Keeps skills and context budget from becoming an unusable pile. |
 | `weekly-file-organization-review` | active, useful | weekly Saturday 9 AM | Reviews Downloads/Documents/external drive candidates without moving anything automatically. |
 | `nightly-daily-workflow-social-draft-loop` | active, testing | daily 10 PM | Turns daily workflow signal into draft social angles without posting. |
