@@ -56,7 +56,7 @@ around for future agent work.
 
 | Goal | Status | Why It Exists |
 |---|---|---|
-| `refactor-until-architecture-settles` | reference | Captures the Peter Steinberger-style `/goal` pattern for architecture refactors with live testing and autoreview. |
+| `refactor-until-architecture-settles` | reference | Captures the Peter Steinberger-style `/goal` pattern for architecture refactors with live UI/e2e testing, progress notes, and autoreview. |
 
 ## Loop Catalog
 
